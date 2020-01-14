@@ -82,7 +82,7 @@ stages:
 #Fourth Stage on Windows Prod
 - stage: WindowsProdEnvCheck
   dependsOn: 
-  - UbuntuProdEnvCheck
+  - UbuntuQAEnvCheck
   - WindowsQAEnvCheck
   condition: succeeded()
   jobs:
